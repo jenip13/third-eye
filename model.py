@@ -14,11 +14,11 @@ validation_data_dir = '/Users/ShereenElaidi/Desktop/University/AI4SocialGood/Con
 test_data_dir = '/Users/ShereenElaidi/Desktop/University/AI4SocialGood/Construct-I/dataset/test'
 
 # the sizes of the samples
-nb_train_samples = 60
+nb_train_samples = 83
 nb_validation_samples = 40
 nb_test_samples = 14
 
-epochs = 50
+epochs = 10
 batch_size = 5
 
 if K.image_data_format() == 'channels_first':
