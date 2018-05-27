@@ -22,7 +22,7 @@ test_model.add(Activation('relu'))
 test_model.add(MaxPooling2D(pool_size=(2, 2)))
 test_model.add(Activation('relu'))
 test_model.add(Dropout(0.5))
-test_model.add(Activation('hard_sigmoid'))
+test_model.add(Activation('sigmoid'))
 
 test_model = load_model('model.h5')
 
@@ -36,15 +36,23 @@ def predict(basedir, model):
         preds = model.predict_classes(x)
 
         probs = model.predict_proba(x)
+        if (probs >= 0.5):
+            print("CAUTION! There is construction here. ")
+        elif(probs < 0.5):
+            print("You're good to go, it's safe.")
 
-        print(probs)
+       # print(probs)
 
+# you need to change this based on the computer that you're using
 
-basedir = "/home/jenisha/third-eye/dataset/testing/construction/"
+basedir = '/Users/ShereenElaidi/Desktop/University/AI4SocialGood/Construct-I/dataset/testing/construction/'
+
+#basedir = "/home/jenisha/third-eye/dataset/testing/construction/"
 
 predict(basedir, test_model)
 
-basedir = "/home/jenisha/third-eye/dataset/testing/no_construction/"
+#basedir = "/home/jenisha/third-eye/dataset/testing/no_construction/"
+basedir = '/Users/ShereenElaidi/Desktop/University/AI4SocialGood/Construct-I/dataset/testing/no_construction/'
 
 predict(basedir, test_model)
 
