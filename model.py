@@ -23,6 +23,7 @@ batch_size = 5
 
 if K.image_data_format() == 'channels_first':
     input_shape = (3, img_width, img_height)
+    print("img data format channels_first")
 else:
     input_shape = (img_width, img_height, 3)
 
@@ -86,4 +87,7 @@ model.fit_generator(
     validation_data=validation_generator,
     validation_steps=nb_validation_samples // batch_size)
 
-model.save_weights('first_try.h5')
+model.save('first_model.h5')
+model.save_weights('first_weights.h5')
+
+
