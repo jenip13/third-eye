@@ -11,8 +11,13 @@ img_width, img_height = 150, 150
 # you need to change this to find the training and validation datasets for your
 train_data_dir='/Users/ShereenElaidi/Desktop/University/AI4SocialGood/third-eye/dataset/training'
 validation_data_dir = '/Users/ShereenElaidi/Desktop/University/AI4SocialGood/third-eye/dataset/validation'
+test_data_dir = '/Users/ShereenElaidi/Desktop/University/AI4SocialGood/third-eye/dataset/test'
+
+# the sizes of the samples
 nb_train_samples = 60
 nb_validation_samples = 40
+nb_test_samples = 14
+
 epochs = 50
 batch_size = 5
 
