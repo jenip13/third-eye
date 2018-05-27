@@ -8,6 +8,8 @@ By creating our own dataset with 67 images of construction sites and 68 no-contr
 
 Our model should be able to detect the incoming image of construction sites and alert the user that the front path is a "no go" and that they should try another path. 
 
+Here is our pitch: https://docs.google.com/presentation/d/1IVlg-DR9DB8k7RDneLAOgExkHa_rkLhPxSgswEMItyg/edit?usp=sharing
+
 # Credits
 Source for backend model: https://gist.github.com/fchollet/0830affa1f7f19fd47b06d4cf89ed44d
 
