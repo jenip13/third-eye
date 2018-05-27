@@ -1,11 +1,17 @@
 from keras.applications import ResNet50
 from keras.preprocessing.image import img_to_array
 from keras.applications import imagenet_utils
+
+from keras.models import load_model as keras_load_model
+from keras.models import Sequential
+from keras.layers import Conv2D, MaxPooling2D
+from keras.layers import Activation, Dropout, Flatten, Dense
+
 from PIL import Image
 import numpy as np
 import flask
 import io
-from model.py import model_def
+#from model import model_def
 
 # initialize Flask application and the Keras model
 app = flask.Flask(__name__)
@@ -19,19 +25,33 @@ def load_model():
     # load the pre-trained Keras model (here we are using a model
 
     global model
-    model = model_def()
-    model.load_weights(weights)
+    input_shape = (img_width, img_height, 3)
+    model = Sequential()
+    model.add(Conv2D(32, (3, 3), input_shape=input_shape))
+    model.add(Activation('relu'))
+    model.add(MaxPooling2D(pool_size=(2, 2)))
+    model.add(Conv2D(32, (3, 3)))
+    model.add(Activation('relu'))
+    model.add(MaxPooling2D(pool_size=(2, 2)))
+    model.add(Conv2D(64, (3, 3)))
+    model.add(Activation('relu'))
+    model.add(MaxPooling2D(pool_size=(2, 2)))
+    model.add(Activation('relu'))
+    model.add(Dropout(0.5))
+    model.add(Activation('hard_sigmoid'))
+
+    model = keras_load_model('model.h5')
 
 
 def prepare_image(image, target):
     # if the image mode is not RGB, convert it
-    if image.mode != "RGB":
-        image = image.convert("RGB")
+    #if image.mode != "RGB":
+    #    image = image.convert("RGB")
 
     # resize the input image and preprocess it
     image = image.resize(target)
-    #image = img_to_array(image)
-    #image = np.expand_dims(image, axis=0)
+    image = img_to_array(image)
+    image = np.expand_dims(image, axis=0)
     #image = imagenet_utils.preprocess_input(image)
 
     # return the processed image
@@ -54,19 +74,25 @@ def predict():
             image = Image.open(io.BytesIO(image))
 
             # preprocess the image and prepare it for classification
-            image = prepare_image(image, target=(224, 224))
+            image = prepare_image(image, target=(150, 150))
 
             # classify the input image and then initialize the list
             # of predictions to return to the client
-            preds = model.predict(image)
-            results = imagenet_utils.decode_predictions(preds)
+            preds = model.predict_classes(image)
+            probs = model.predict_proba(image)
+
             data["predictions"] = []
+            r = {"label": preds, "probability": float(probs)}
+            data["predictions"].append(r)
+
+            #results = imagenet_utils.decode_predictions(preds)
+            #data["predictions"] = []
 
             # loop over the results and add them to the list of
             # returned predictions
-            for (imagenetID, label, prob) in results[0]:
-                r = {"label": label, "probability": float(prob)}
-                data["predictions"].append(r)
+            #for (imagenetID, label, prob) in results[0]:
+            #    r = {"label": label, "probability": float(prob)}
+            #    data["predictions"].append(r)
 
             # indicate that the request was a success
             data["success"] = True

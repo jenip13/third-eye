@@ -9,9 +9,14 @@ from keras import backend as K
 img_width, img_height = 150, 150
 
 # you need to change this to find the training and validation datasets for your
-train_data_dir='/Users/ShereenElaidi/Desktop/University/AI4SocialGood/Construct-I/dataset/training'
-validation_data_dir = '/Users/ShereenElaidi/Desktop/University/AI4SocialGood/Construct-I//dataset/validation'
-test_data_dir = '/Users/ShereenElaidi/Desktop/University/AI4SocialGood/Construct-I/dataset/test'
+#train_data_dir='/Users/ShereenElaidi/Desktop/University/AI4SocialGood/Construct-I/dataset/training'
+#validation_data_dir = '/Users/ShereenElaidi/Desktop/University/AI4SocialGood/Construct-I//dataset/validation'
+#test_data_dir = '/Users/ShereenElaidi/Desktop/University/AI4SocialGood/Construct-I/dataset/test'
+
+
+train_data_dir='/home/jenisha/third-eye/dataset/training'
+validation_data_dir = '/home/jenisha/third-eye/dataset/validation'
+test_data_dir = '/home/jenisha/third-eye/dataset/test'
 
 # the sizes of the samples
 nb_train_samples = 83

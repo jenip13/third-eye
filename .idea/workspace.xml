@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="deb58b3f-70b6-4cbb-9806-dbb19320f67a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/test_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/testing/construction/[C]Screen Shot 2018-05-26 at 15.18.46.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/testing/construction/[C]Screen Shot 2018-05-26 at 15.22.43.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/testing/construction/[C]Screen Shot 2018-05-26 at 15.23.06.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/testing/construction/[C]Screen Shot 2018-05-26 at 15.35.00.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/testing/construction/[C]sempahores.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/testing/construction/[C]tasty.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/testing/construction/[C]truck.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/testing/no_construction/[NC]Screen Shot 2018-05-26 at 14.47.21.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/testing/no_construction/[NC]Screen Shot 2018-05-26 at 14.48.50.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/testing/no_construction/[NC]Screen Shot 2018-05-26 at 14.49.11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/testing/no_construction/[NC]Screen Shot 2018-05-26 at 14.49.35.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/testing/no_construction/[NC]Screen Shot 2018-05-26 at 14.50.50.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/testing/no_construction/[NC]Screen Shot 2018-05-26 at 14.51.02.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/testing/no_construction/[NC]Screen Shot 2018-05-26 at 14.51.16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend.py" beforeDir="false" afterPath="$PROJECT_DIR$/frontend.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/model.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,11 +14,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="frontend.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/frontend.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="53" column="4" selection-start-line="53" selection-start-column="4" selection-end-line="53" selection-end-column="4" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="model.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-750">
-              <caret line="13" column="96" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="96" />
+            <state relative-caret-position="270">
+              <caret line="18" column="49" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
               <folding>
                 <element signature="e#20#76#0" expanded="true" />
               </folding>
@@ -40,11 +38,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_model.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="test_model.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+            <state>
+              <caret selection-end-line="3" selection-end-column="60" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -68,9 +66,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/model2.py" />
-        <option value="$PROJECT_DIR$/frontend.py" />
-        <option value="$PROJECT_DIR$/model.py" />
         <option value="$PROJECT_DIR$/test_model.py" />
+        <option value="$PROJECT_DIR$/model.py" />
+        <option value="$PROJECT_DIR$/frontend.py" />
       </list>
     </option>
   </component>
@@ -132,7 +130,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test_model">
+  <component name="RunManager" selected="Python.Default">
     <configuration name="Default" type="PythonConfigurationType" factoryName="Python">
       <module name="third-eye" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -277,20 +275,10 @@
     <entry file="file://$PROJECT_DIR$/model2.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1335">
-          <caret line="89" column="23" lean-forward="true" selection-start-line="89" selection-start-column="23" selection-end-line="89" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-750">
-          <caret line="13" column="96" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="96" />
+        <state relative-caret-position="270">
+          <caret line="18" column="49" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
           <folding>
             <element signature="e#20#76#0" expanded="true" />
           </folding>
@@ -299,10 +287,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test_model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+        <state>
+          <caret selection-end-line="3" selection-end-column="60" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="53" column="4" selection-start-line="53" selection-start-column="4" selection-end-line="53" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
